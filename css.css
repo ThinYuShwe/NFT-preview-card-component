@@ -1,0 +1,172 @@
+body,
+main,
+section,
+div,
+p,
+img,
+h1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+main {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  border-radius: 1rem;
+  background-color: hsla(216, 51%, 16%, 0.598);
+  padding: 1rem;
+}
+
+#hover {
+  position: relative; /*new one*/
+}
+
+#eq {
+  border-radius: 1rem;
+  width: 100%;
+  position: relative; /* Add position relative to the image */
+}
+
+section h1 {
+  color: white;
+  margin-top: 1rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+#para1 {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+#one {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+#paraEth {
+  color: hsl(178, 100%, 50%);
+  margin-left: 0.5rem;
+  margin: auto;
+}
+
+#paraClock {
+  color: rgba(255, 255, 255, 0.692);
+  margin-left: 0.5rem;
+  margin: auto;
+}
+
+#imgClock {
+  margin-left: auto;
+}
+
+#two {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+
+#two img {
+  max-width: 3rem;
+  border: 2px solid white;
+  border-radius: 3rem;
+}
+
+#two p {
+  color: rgba(255, 255, 255, 0.692);
+  margin: auto;
+}
+
+#two span {
+  color: white;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: hsla(178, 77%, 30%, 0.594); /* Black with 50% opacity */
+  transition: opacity 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 620px) {
+  section {
+    max-width: 17rem;
+  }
+
+  main {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #two p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    max-width: 26rem;
+  }
+
+  #para1 {
+    font-size: 1.2rem;
+  }
+
+  #paraEth,
+  #paraClock {
+    font-size: 1.2rem;
+  }
+
+  #two p {
+    font-size: 1.1rem;
+  }
+
+  #imgEth,
+  #imgClock {
+    width: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    box-sizing: border-box;
+  }
+
+  section {
+    max-width: 30rem;
+  }
+
+  #two p {
+    font-size: 1rem;
+  }
+}
